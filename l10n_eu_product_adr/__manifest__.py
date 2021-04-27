@@ -11,6 +11,7 @@
     "application": False,
     "installable": True,
     "depends": ["product", "sale_stock"],
+    "development_status": "Alpha",
     "data": [
         "data/product_dangerous_type_data.xml",
         "data/product_dangerous_class_data.xml",

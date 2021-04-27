@@ -4,4 +4,4 @@ and set weight and volume of this composition.
 
 Read more
 https://en.wikipedia.org/wiki/ADR_(treaty)
-Unece standards https://www.unece.org/trans/danger/publi/adr/adr2011/11ContentsE.html
+Unece standards https://unece.org/transportdangerous-goods/adr-2021-files
