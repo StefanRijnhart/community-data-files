@@ -13,8 +13,8 @@
     "depends": ["product", "sale_stock"],
     "development_status": "Alpha",
     "data": [
-        "data/product_dangerous_type_data.xml",
-        "data/product_dangerous_class_data.xml",
+        "data/adr_label.xml",
+        "data/adr_class.xml",
         "data/utility_models_data.xml",
         "security/ir.model.access.csv",
         "views/product_template_view.xml",

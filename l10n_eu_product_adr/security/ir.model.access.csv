@@ -22,3 +22,15 @@ access_un_ref_class_manager,access_un_ref_class_manager,model_un_reference,base.
 access_dang_uom_user,access_dang_uom_class,model_dangerous_uom,base.group_user,1,0,0,0
 access_dang_uom_manager,access_dang_uom_class_manager,model_dangerous_uom,base.group_erp_manager,1,1,1,1
 access_dangerous_goods_handler,access_dangerous_goods_handler,model_dangerous_goods_handler,stock.group_stock_user,1,1,1,1
+access_adr_goods,access_adr_goods,model_adr_goods,base.group_user,1,0,0,0
+access_adr_goods,access_adr_goods,model_adr_goods,base.group_erp_manager,1,1,1,1
+access_adr_class,access_adr_class,model_adr_class,base.group_user,1,0,0,0
+access_adr_class,access_adr_class,model_adr_class,base.group_erp_manager,1,1,1,1
+access_adr_classification_code,access_adr_classification_code,model_adr_classification_code,base.group_user,1,0,0,0
+access_adr_classification_code,access_adr_classification_code,model_adr_classification_code,base.group_erp_manager,1,1,1,1
+access_adr_transport_category,access_adr_transport_category,model_adr_transport_category,base.group_user,1,0,0,0
+access_adr_transport_category,access_adr_transport_category,model_adr_transport_category,base.group_erp_manager,1,1,1,1
+access_adr_tunnel_restriction_code,access_adr_tunnel_restriction_code,model_adr_tunnel_restriction_code,base.group_user,1,0,0,0
+access_adr_tunnel_restriction_code,access_adr_tunnel_restriction_code,model_adr_tunnel_restriction_code,base.group_erp_manager,1,1,1,1
+access_adr_label,access_adr_label,model_adr_label,base.group_user,1,0,0,0
+access_adr_label,access_adr_label,model_adr_label,base.group_erp_manager,1,1,1,1
