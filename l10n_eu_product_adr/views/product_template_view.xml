@@ -13,64 +13,28 @@
             </xpath>
             <xpath expr="//page[last()]" position="after">
                 <page
-                    name="dangerous"
-                    string="Dangerous attributes"
-                    attrs="{'invisible':['|',('type', '!=', 'product'), ('is_dangerous', '=', False)]}"
+                    name="adr"
+                    string="Dangerous Goods"
+                    attrs="{'invisible': ['|', ('type', '!=', 'product'), ('is_dangerous', '=', False)]}"
                 >
                     <group>
-                        <group name="main_dangerous_info">
-                            <field name="is_dangerous_good" />
-                            <field name="is_dangerous_waste" />
-                            <field name="un_ref" />
-                            <field name="dangerous_class_id" />
-                        </group>
-                        <group name="dangerous_packing" string="Dangerous Packaging">
-                            <field name="packaging_group" />
+                        <group string="Classification">
                             <field
-                                name="transport_category"
-                                attrs="{'required':[('is_dangerous','=',True)]}"
+                                name="adr_goods_id"
+                                attrs="{'required': [('type', '=', 'product'), ('is_dangerous', '=', True)]}"
+                                options="{'no_create': True}"
                             />
-                            <field name="tunnel_code" />
-                            <field name="label_first" />
-                            <field name="label_second" />
-                            <field name="label_third" />
-                            <field
-                                name="content_package"
-                                attrs="{'required':[('is_dangerous','=',True)]}"
-                            />
-                            <field name="flash_point" />
+                            <field name="adr_class_id" />
+                            <field name="adr_classification_code" />
                         </group>
-                        <group name="hazardous_details">
-                            <field name="envir_hazardous" />
-                            <field name="adr_amount" />
-                            <field name="voc" />
-                            <field name="currency_id" />
-                            <field name="veg" />
-                            <field name="nag" />
-                            <field name="veva_code_empty" />
-                            <field name="veva_code_full" />
-                            <field name="un_report" widget="url" />
-                            <field name="sds" widget="url" />
-                            <field name="h_no" />
-                            <field name="hazard_ind" />
-                            <field
-                                name="dg_unit"
-                                attrs="{'required':[('is_dangerous','=',True)]}"
-                            />
+                        <group string="Transport">
+                            <field name="adr_transport_category" />
+                            <field name="adr_tunnel_restriction_code" />
                         </group>
-                        <group name="storage" string="Storage">
-                            <field name="class_id" />
-                            <field name="limited_amount_id" />
-                            <field name="storage_class_id" />
-                            <field
-                                name="packaging_type_id"
-                                attrs="{'required':[('is_dangerous','=',True)]}"
-                            />
-                            <field name="storage_temp_id" />
-                            <field name="dangerous_selection_id" />
-                            <field name="wgk_class_id" />
+                        <group colspan="4" col="2" string="Labels">
+                            <field name="adr_label_ids" nolabel="1" mode="kanban" />
                         </group>
-                    </group>
+                </group>
                 </page>
             </xpath>
         </field>
